@@ -14,7 +14,7 @@ void setup(){
 
 float k = 1;
 void draw(){
-  background(random(20, 30));
+  background(30);
   k = 1 + abs(sin(frameCount / 50.0));
   
   for(int y = 0; y < height / scaleFactor; y++){
@@ -37,7 +37,6 @@ void draw(){
           color c = color(255, 255, 0);
           fill(c);
           rect(x * scaleFactor, y * scaleFactor, scaleFactor, scaleFactor);
-          //rect(x, 0, 1, height);
         }
       }
     }
